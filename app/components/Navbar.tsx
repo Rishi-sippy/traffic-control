@@ -39,8 +39,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden p-2 rounded-lg border border-white/20" onClick={() => setOpen(!open)}>
-          {open ? <X /> : <Menu />}
+        <button className="md:hidden p-2 rounded-lg border border-white/10" onClick={() => setOpen(!open)}>
+          {open ? <X className="w-6 h-6 text-transparent bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text" /> : <Menu className="w-6 h-6 text-transparent bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text" />}
         </button>
       </div>
 
