@@ -1,3 +1,5 @@
+import { Footer } from './components/Footer'
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden relative">
@@ -22,10 +24,25 @@ export default function HomePage() {
           Join the Mission — Reduce Traffic →
         </a>
       </section>
+      <section className="py-24 px-6 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-16">How It Works</h2>
 
-      {/* Highlight Strip */}
-      <section className="py-12 bg-gradient-to-r from-green-600/20 to-yellow-600/20 border-y border-gray-800 text-center">
-        <p className="text-xl font-semibold tracking-wide">“Every Day, Only the Cars That Need to Move — Move.”</p>
+        <div className="grid md:grid-cols-3 gap-10 text-center">
+          <div className="p-6 rounded-2xl border border-gray-800 bg-black/40 backdrop-blur-xl">
+            <h3 className="text-xl font-semibold text-green-400 mb-2">1. Register Vehicle</h3>
+            <p className="text-gray-400">Users register and get assigned permit eligibility.</p>
+          </div>
+
+          <div className="p-6 rounded-2xl border border-gray-800 bg-black/40 backdrop-blur-xl">
+            <h3 className="text-xl font-semibold text-yellow-400 mb-2">2. Smart Allocation</h3>
+            <p className="text-gray-400">System allows only 25% vehicles daily based on logic.</p>
+          </div>
+
+          <div className="p-6 rounded-2xl border border-gray-800 bg-black/40 backdrop-blur-xl">
+            <h3 className="text-xl font-semibold text-green-300 mb-2">3. Smooth Traffic</h3>
+            <p className="text-gray-400">Less congestion, faster commute, better city flow.</p>
+          </div>
+        </div>
       </section>
 
       <section className="py-24 px-6 max-w-6xl mx-auto">
@@ -41,6 +58,29 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(34,197,94,0.15)_1px,transparent_1px)] [background-size:40px_40px]"></div>
 
           <p className="absolute bottom-4 left-4 text-sm text-gray-400">Real-time adaptive traffic visualization</p>
+        </div>
+      </section>
+      <section className="py-20 bg-gradient-to-r from-green-600/10 to-yellow-600/10 border-y border-gray-800">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+          <div>
+            <h3 className="text-4xl font-bold text-green-400">12,430</h3>
+            <p className="text-gray-400 mt-2">Vehicles Regulated</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-yellow-400">-28%</h3>
+            <p className="text-gray-400 mt-2">Traffic Reduction</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-green-300">32 sec</h3>
+            <p className="text-gray-400 mt-2">Avg Wait Time</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-yellow-300">18 Zones</h3>
+            <p className="text-gray-400 mt-2">Active Areas</p>
+          </div>
         </div>
       </section>
 
@@ -105,8 +145,7 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-
-      <footer className="py-10 border-t border-gray-800 text-center text-gray-500">© {new Date().getFullYear()} PermitFlow — Made for Smarter Mobility.</footer>
+      <Footer />
     </main>
   )
 }
