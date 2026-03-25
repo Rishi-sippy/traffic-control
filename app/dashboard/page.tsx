@@ -1,8 +1,20 @@
+import { OverviewCard } from "../components/ChartCard";
+import { StatsCard } from "../components/KPI";
+import { PerformanceCard } from "../components/PerformanceCard";
+import { SalesCard } from "../components/ProgressCircle";
+
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-black text-white px-10 py-20">
-      <h1 className="text-4xl font-bold mb-6">Dashboard</h1>
-      <p className="text-gray-400 text-lg">Welcome to your PermitFlow dashboard. Future metrics, charts, and permit data will appear here.</p>
+    <div className="min-h-screen bg-[#0b0b0b] text-white px-10 py-12">
+      <h1 className="text-5xl font-bold mb-12">KPI Dashboard</h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <OverviewCard />
+        <StatsCard />
+
+        <SalesCard />
+        <PerformanceCard />
+      </div>
     </div>
   )
 }
