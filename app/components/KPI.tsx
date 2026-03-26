@@ -1,20 +1,20 @@
-import CircularProgress from './CircleProgressBar'
+import MotionCard from './MotionCard'
+import AnimatedNumber from './AnimatedNumber'
+import { StatusDot } from './StatutDot'
 
 export default function KPIStatsCard() {
-  const stats = [96, 75, 50, 85]
-
   return (
-    <div className="neu-card p-6">
-      <h3 className="mb-6 text-gray-300">KPI Dashboard</h3>
-
-      <div className="grid grid-cols-2 gap-4">
-        {stats.map((v, i) => (
-          <div key={i} className="neu-inner p-4 text-center">
-            <CircularProgress value={v} />
-            <p className="text-xs text-gray-400 mt-2">Analysis</p>
-          </div>
-        ))}
+    <MotionCard>
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-gray-300">Revenue</h3>
+        <StatusDot />
       </div>
-    </div>
+
+      <h2 className="text-4xl font-bold text-green-400">
+        <AnimatedNumber value={23000} />
+      </h2>
+
+      <p className="text-xs text-gray-500 mt-2">Live performance</p>
+    </MotionCard>
   )
 }
