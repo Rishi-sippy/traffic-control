@@ -1,4 +1,4 @@
-import { SoftCard } from './Card'
+import SoftCard from './Card'
 
 export function SalesCard() {
   return (
