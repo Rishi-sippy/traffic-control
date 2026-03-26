@@ -1,18 +1,22 @@
-// components/dashboard/SalesAnalyticsCard.tsx
-
-import { SoftCard } from './Card'
-
-export default function SalesAnalyticsCard() {
+// components/dashboard/SalesCard.tsx
+export default function SalesCard() {
   return (
-    <SoftCard>
-      <h3 className="text-lg mb-6 text-gray-300">Sales Analytics</h3>
+    <div className="neu-card p-6">
+      <h3 className="text-lg mb-4 text-gray-300">KPI Dashboard Sales</h3>
 
-      <div className="h-32 rounded-xl bg-gradient-to-r from-green-400/20 to-blue-400/20"></div>
+      <div className="flex gap-4">
+        <div className="neu-inner p-4 text-center">
+          <p className="text-green-400 font-bold">96%</p>
+          <p className="text-xs text-gray-400">Value</p>
+        </div>
 
-      <div className="flex justify-between mt-4 text-sm text-gray-400">
-        <span>96%</span>
-        <span>Growth</span>
+        <div className="flex-1 h-32 rounded-xl bg-gradient-to-r from-green-400/20 to-blue-400/20"></div>
+
+        <div className="neu-inner p-4 text-center">
+          <p className="text-green-400 font-bold">96%</p>
+          <p className="text-xs text-gray-400">Value</p>
+        </div>
       </div>
-    </SoftCard>
+    </div>
   )
 }

@@ -31,3 +31,19 @@ body {
 .mobile-link {
   @apply block text-gray-300 hover:text-green-400 text-lg font-medium transition;
 }
+/* globals.css */
+.neu-card {
+  background: #111;
+  border-radius: 28px;
+  box-shadow:
+    8px 8px 20px #000,
+    -6px -6px 16px #1a1a1a;
+}
+
+.neu-inner {
+  background: #0f0f0f;
+  border-radius: 16px;
+  box-shadow:
+    inset 4px 4px 10px #000,
+    inset -3px -3px 10px #1a1a1a;
+}

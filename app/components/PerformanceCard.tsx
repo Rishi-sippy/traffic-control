@@ -1,13 +1,12 @@
-import { SoftCard } from './Card'
-
-export function PerformanceCard() {
+// components/dashboard/StrategyCard.tsx
+export default function StrategyCard() {
   return (
-    <SoftCard>
-      <h3 className="text-lg mb-6 text-gray-300">Performance</h3>
+    <div className="neu-card p-6">
+      <h3 className="text-lg mb-6 text-gray-300">Strategy & Development</h3>
 
-      <div className="h-32 bg-gradient-to-r from-pink-400 via-yellow-400 to-green-400 rounded-full"></div>
+      <div className="h-32 rounded-full bg-gradient-to-r from-pink-400 via-yellow-400 to-green-400"></div>
 
-      <div className="mt-4 text-gray-400 text-sm">Strategy & Development</div>
-    </SoftCard>
+      <div className="mt-4 text-sm text-gray-400">277.2M Growth</div>
+    </div>
   )
 }
